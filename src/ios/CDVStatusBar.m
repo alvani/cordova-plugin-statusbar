@@ -230,6 +230,7 @@ static const void *kStatusBarStyle = &kStatusBarStyle;
     _statusBarOverlaysWebView = statusBarOverlaysWebView;
 
     [self resizeWebView];
+    [(UIWebView *)self.webView reload];
 
     if (statusBarOverlaysWebView) {
 
